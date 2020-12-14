@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
 import FormInput from "./components/FormInput";
 import UsersView from "./components/UsersView";
 
@@ -37,6 +38,7 @@ class App extends React.Component {
   render(){
       return (
         <div className="App">
+            <Header />
             <FormInput />
             <UsersView />
         </div>
