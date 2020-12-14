@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import "./App.css";
+function FormInput() {
+   return <div>form input</div>;
 }
-
+function UsersView( props) {
+   // props: users (filteredUsers)
+   // button to filter by name 
+      // onClick -> this.sortUsers
+   return <div>users view</div>;
+}
+class App extends React.Component {
+   state = {
+      allUsers: [],
+      filteredUsers: [],
+      searchTerm: ""
+   }
+   // component did mount
+      // call API (utils)
+         // setState
+            // allUsers: [],
+            // filteredUsers: [],
+   // handleInputChange
+      // change (setState) searchTerm
+      // filter users based on searchTerm
+      // sort if relevant
+   // sortUsers
+      // using js sort (by string, or if you want to sort by number (DOB))
+      // optionally implement, up or down
+   render(){
+      return (
+         <div className="App">
+            <FormInput />
+            <UsersView />
+         </div>
+      );
+   }
+}
 export default App;
