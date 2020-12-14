@@ -1,20 +1,26 @@
 import React from "react";
 import "./App.css";
-function FormInput() {
-   return <div>form input</div>;
-}
-function UsersView( props) {
-   // props: users (filteredUsers)
-   // button to filter by name 
-      // onClick -> this.sortUsers
-   return <div>users view</div>;
-}
+import FormInput from "./components/FormInput";
+import UsersView from "./components/UsersView";
+
+
+// function FormInput() {
+//   return <div>Form Input</div>;
+// }
+
+// function UsersView( props) {
+//    // props: users (filteredUsers)
+//    // button to filter by name 
+//       // onClick -> this.sortUsers
+//   return <div>Users View</div>;
+// }
+
 class App extends React.Component {
-   state = {
+  state = {
       allUsers: [],
       filteredUsers: [],
       searchTerm: ""
-   }
+  }
    // component did mount
       // call API (utils)
          // setState
@@ -27,13 +33,14 @@ class App extends React.Component {
    // sortUsers
       // using js sort (by string, or if you want to sort by number (DOB))
       // optionally implement, up or down
-   render(){
+
+  render(){
       return (
-         <div className="App">
+        <div className="App">
             <FormInput />
             <UsersView />
-         </div>
+        </div>
       );
-   }
+  }
 }
 export default App;
