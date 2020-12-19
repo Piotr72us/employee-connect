@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/employee-directory/employee-connect/static/css/main.66ca78f9.chunk.css",
-    "main.js": "/employee-directory/employee-connect/static/js/main.0633fdf5.chunk.js",
-    "main.js.map": "/employee-directory/employee-connect/static/js/main.0633fdf5.chunk.js.map",
-    "runtime-main.js": "/employee-directory/employee-connect/static/js/runtime-main.6ecda18c.js",
-    "runtime-main.js.map": "/employee-directory/employee-connect/static/js/runtime-main.6ecda18c.js.map",
-    "static/css/2.1a02f21c.chunk.css": "/employee-directory/employee-connect/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.16b7dc22.chunk.js": "/employee-directory/employee-connect/static/js/2.16b7dc22.chunk.js",
-    "static/js/2.16b7dc22.chunk.js.map": "/employee-directory/employee-connect/static/js/2.16b7dc22.chunk.js.map",
-    "static/js/3.b7dd0330.chunk.js": "/employee-directory/employee-connect/static/js/3.b7dd0330.chunk.js",
-    "static/js/3.b7dd0330.chunk.js.map": "/employee-directory/employee-connect/static/js/3.b7dd0330.chunk.js.map",
-    "index.html": "/employee-directory/employee-connect/index.html",
-    "static/css/2.1a02f21c.chunk.css.map": "/employee-directory/employee-connect/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.66ca78f9.chunk.css.map": "/employee-directory/employee-connect/static/css/main.66ca78f9.chunk.css.map",
-    "static/js/2.16b7dc22.chunk.js.LICENSE.txt": "/employee-directory/employee-connect/static/js/2.16b7dc22.chunk.js.LICENSE.txt"
+    "main.css": "/employee-connect/static/css/main.66ca78f9.chunk.css",
+    "main.js": "/employee-connect/static/js/main.37ff878b.chunk.js",
+    "main.js.map": "/employee-connect/static/js/main.37ff878b.chunk.js.map",
+    "runtime-main.js": "/employee-connect/static/js/runtime-main.b3730ba9.js",
+    "runtime-main.js.map": "/employee-connect/static/js/runtime-main.b3730ba9.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/employee-connect/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.16b7dc22.chunk.js": "/employee-connect/static/js/2.16b7dc22.chunk.js",
+    "static/js/2.16b7dc22.chunk.js.map": "/employee-connect/static/js/2.16b7dc22.chunk.js.map",
+    "static/js/3.b7dd0330.chunk.js": "/employee-connect/static/js/3.b7dd0330.chunk.js",
+    "static/js/3.b7dd0330.chunk.js.map": "/employee-connect/static/js/3.b7dd0330.chunk.js.map",
+    "index.html": "/employee-connect/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/employee-connect/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.66ca78f9.chunk.css.map": "/employee-connect/static/css/main.66ca78f9.chunk.css.map",
+    "static/js/2.16b7dc22.chunk.js.LICENSE.txt": "/employee-connect/static/js/2.16b7dc22.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ecda18c.js",
+    "static/js/runtime-main.b3730ba9.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.16b7dc22.chunk.js",
     "static/css/main.66ca78f9.chunk.css",
-    "static/js/main.0633fdf5.chunk.js"
+    "static/js/main.37ff878b.chunk.js"
   ]
 }
