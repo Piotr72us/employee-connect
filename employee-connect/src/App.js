@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import FormInput from "./components/FormInput";
-import FormCard from "./components/FormCard";
 import UsersView from "./components/UsersView";
 import API from "./utils/API";
 
@@ -19,7 +18,6 @@ import API from "./utils/API";
 // const [people, setPeople] = useState([]);
 // console.log("Here are our users")
 
-
 // useEffect(() => {
 //   API.getUsers().then(employees => {
 //     setPeople(employees.data.results)
@@ -35,18 +33,18 @@ class App extends React.Component {
     lastName: "",
     password: ""
   }
-  // component did mount
-  // call API (utils)
-  // setState
-  // allUsers: [],
-  // filteredUsers: [],
-  // handleInputChange
-  // change (setState) searchTerm
-  // filter users based on searchTerm
-  // sort if relevant
-  // sortUsers
-  // using js sort (by string, or if you want to sort by number (DOB))
-  // optionally implement, up or down
+    // component did mount
+    // call API (utils)
+    // setState
+    // allUsers: [],
+    // filteredUsers: [],
+    // handleInputChange
+    // change (setState) searchTerm
+    // filter users based on searchTerm
+    // sort if relevant
+    // sortUsers
+    // using js sort (by string, or if you want to sort by number (DOB))
+    // optionally implement, up or down
 
   componentDidMount() {
     API.getUsers().then(employees => {
@@ -54,12 +52,10 @@ class App extends React.Component {
     })
   }
 
-
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const name = event.target.name;
-
 
     // Updating the input's state
     this.setState({
@@ -68,13 +64,11 @@ class App extends React.Component {
     console.log(value)
   };
 
-
   render() {
     return (
       <div className="App">
         <Header />
-        <FormInput   />
-        <FormCard handleInputChange={this.handleInputChange} firstName={this.state.firstName} lastName={this.state.lastName} />
+        <FormInput handleInputChange={this.handleInputChange} firstName={this.state.firstName} lastName={this.state.lastName} />
         <UsersView employees={this.state.allUsers} />
       </div>
     );
