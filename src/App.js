@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
-import FormInput from "./components/FormInput";
 import UsersView from "./components/UsersView";
 import API from "./utils/API";
 
@@ -9,8 +8,6 @@ import API from "./utils/API";
 class App extends React.Component {
   state = {
     allUsers: [],
-    filteredUsers: [],
-    searchTerm: "",
   }
 
     // change (setState) searchTerm
@@ -29,24 +26,26 @@ class App extends React.Component {
   }
 
   // handleInputChange
-  handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
-    let value = event.target.value;
-    const name = event.target.name;
+  // handleInputChange = event => {
+  //   // Getting the value and name of the input which triggered the change
+  //   let value = event.target.value;
+  //   const name = event.target.name;
 
-    // Updating the input's state = setState
-    this.setState({
-      [name]: value
-    })
-    // console.log(value)
-  };
+  //   // Updating the input's state = setState
+  //   this.setState({
+  //     [name]: value
+  //   })
+  //   console.log(value)
+  // };
 
   render() {
     return (
       <div className="App">
         <Header />
-        <FormInput handleInputChange={this.handleInputChange} searchTerm={this.state.searchTerm} />
+        {/* <FormInput handleInputChange={this.handleInputChange} searchTerm={this.state.searchTerm} /> */}
+        {this.state.allUsers.length > 0 &&
         <UsersView employees={this.state.allUsers} />
+        }
       </div>
     );
   }
