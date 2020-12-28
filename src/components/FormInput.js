@@ -7,24 +7,16 @@ function FormInput (props) {
     return (
       <div>
         <p>
-          Hello {props.firstName} {props.lastName}
+          Hello {props.searchTerm}
         </p>
         <form className="form">
           <input
-            value={props.firstName}
-            name="firstName"
+            value={props.searchTerm}
+            name="searchTerm"
             onChange={props.handleInputChange}
             type="text"
-            placeholder="First Name"
+            placeholder="First Name / Last Name"
           />
-          <input
-            value={props.lastName}
-            name="lastName"
-            onChange={props.handleInputChange}
-            type="text"
-            placeholder="Last Name"
-          />
-          <button onClick={props.handleFormSubmit}>Submit</button>
         </form>
       </div>
     );

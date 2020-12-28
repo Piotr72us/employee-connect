@@ -5,70 +5,47 @@ import FormInput from "./components/FormInput";
 import UsersView from "./components/UsersView";
 import API from "./utils/API";
 
-// function FormInput() {
-//   return <div>Form Input</div>;
-// }
-
-// function UsersView( props) {
-//    // props: users (filteredUsers)
-//    // button to filter by name 
-//       // onClick -> this.sortUsers
-//   return <div>Users View</div>;
-// }
-// const [people, setPeople] = useState([]);
-// console.log("Here are our users")
-
-// useEffect(() => {
-//   API.getUsers().then(employees => {
-//     setPeople(employees.data.results)
-//   })
-// }, []) 
 
 class App extends React.Component {
   state = {
     allUsers: [],
     filteredUsers: [],
     searchTerm: "",
-    firstName: "",
-    lastName: "",
-    password: ""
   }
-    // component did mount
-    // call API (utils)
-    // setState
-    // allUsers: [],
-    // filteredUsers: [],
-    // handleInputChange
-    // change (setState) searchTerm
-    // filter users based on searchTerm
-    // sort if relevant
-    // sortUsers
-    // using js sort (by string, or if you want to sort by number (DOB))
-    // optionally implement, up or down
 
+    // change (setState) searchTerm
+      // filter users based on searchTerm
+      // sort if relevant
+    // sortUsers
+      // using js sort (by string, or if you want to sort by number (DOB))
+      // optionally implement, up or down
+
+  // component did mount
   componentDidMount() {
+    // call API (utils)
     API.getUsers().then(employees => {
       this.setState({ allUsers: employees.data.results})
     })
   }
 
+  // handleInputChange
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const name = event.target.name;
 
-    // Updating the input's state
+    // Updating the input's state = setState
     this.setState({
       [name]: value
     })
-    console.log(value)
+    // console.log(value)
   };
 
   render() {
     return (
       <div className="App">
         <Header />
-        <FormInput handleInputChange={this.handleInputChange} firstName={this.state.firstName} lastName={this.state.lastName} />
+        <FormInput handleInputChange={this.handleInputChange} searchTerm={this.state.searchTerm} />
         <UsersView employees={this.state.allUsers} />
       </div>
     );

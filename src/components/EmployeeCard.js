@@ -22,7 +22,7 @@ function EmployeeCard(props) {
               </li>
             </ul>
           </div>
-          <span className="remove">𝘅</span>
+          <span className="remove"></span>
         </div>      
       )
     })  : "no search found"}
