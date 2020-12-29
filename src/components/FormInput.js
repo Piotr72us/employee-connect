@@ -6,16 +6,13 @@ function FormInput (props) {
 
     return (
       <div>
-        <p>
-          Hello {props.searchTerm}
-        </p>
         <form className="form">
           <input
             value={props.searchTerm}
             name="searchTerm"
             onChange={props.handleInputChange}
             type="text"
-            placeholder="First Name / Last Name"
+            placeholder="Search"
           />
         </form>
       </div>

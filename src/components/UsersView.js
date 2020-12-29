@@ -50,7 +50,7 @@ render () {
   return (<div>
     <FormInput handleInputChange={this.handleInputChange} searchTerm={this.state.searchTerm} />
     {/* {console.log(props.employees)} */}
-    <h2>Users View</h2>
+    
     <EmployeeCard employees={this.state.filteredEmployees} />
     </div>);
   }
