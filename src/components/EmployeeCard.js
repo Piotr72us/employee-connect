@@ -6,7 +6,7 @@ function EmployeeCard(props) {
       {props.employees.length > 0 ? props.employees.map((employee, index) => {
         return (
 
-          <div className="container empCard" key={index}>
+          <div className="empCard" key={index}>
             <div className="row">
               <div className="col-sm">
                 <div className="img-container">
@@ -24,30 +24,8 @@ function EmployeeCard(props) {
               </div>
             </div>
           </div>
-
-
-          // <div className="card" key={index}>
-          //   <div className="img-container">
-          //     <img alt={employee.name.first} src={employee.picture.medium}/>
-          //   </div>
-          //   <div className="content">
-          //     <ul style={{listStyleType: "none"}}>
-          //       <li>
-          //         <strong>Name:</strong> {employee.name.first} {employee.name.last}
-          //       </li>
-          //       <li>
-          //         <strong>Email:</strong> {employee.email}
-          //       </li>
-          //       <li>
-          //         <strong>Cell phone:</strong> {employee.cell}
-          //       </li>
-          //     </ul>
-          //   </div>
-          //   <span className="remove"></span>
-          // </div>
-
         )
-      }) : "no search found"}
+      }) : "No search results found"}
     </>
   );
 }
