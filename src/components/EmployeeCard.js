@@ -10,7 +10,7 @@ function EmployeeCard(props) {
             <div className="row">
               <div className="col-sm">
                 <div className="img-container">
-                  <img className="headshot" alt={employee.name.first} src={employee.picture.large}/>
+                  <img className="headshot" alt={employee.name.first} src={employee.picture.large} />
                 </div>
               </div>
               <div className="col-sm center">
