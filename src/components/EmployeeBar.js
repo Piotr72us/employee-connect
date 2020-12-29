@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "./EmployeeCard";
+import arrow from "../img/arrow2.png";
 
 class EmployeeBar extends React.Component {
 
@@ -63,17 +64,20 @@ class EmployeeBar extends React.Component {
           <div className="row">
             <div className="col-sm">
               <div className="img-container">
-                <p><strong>Image:</strong></p>
+                <p><strong>Picture</strong></p>
               </div>
             </div>
             <div className="col-sm">
-              <p onClick={this.sortName}><strong>Name:</strong></p>
+              <button onClick={this.sortName}>
+                <strong>Name </strong>
+                <img className="arrow" alt="sort down-triangle" src={arrow} />
+              </button>
             </div>
             <div className="col-sm">
-              <p><strong>Email:</strong></p>
+              <p><strong>Email</strong></p>
             </div>
             <div className="col-sm">
-              <p><strong>Cell phone:</strong></p>
+              <p><strong>Cell phone</strong></p>
             </div>
           </div>
         </div>
