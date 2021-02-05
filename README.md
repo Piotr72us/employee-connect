@@ -18,7 +18,7 @@ __Employee-Connect__ is an app that allows the user to comfortably browse the em
 
 1. Download the repo from this GitHub page. Open the repo in Visual Studio Code or another similar application. Type __yarn start__ or __npm start__ in the terminal and click enter. Enjoy using the app! 
 
-2. The app is also deployed to __GitHub Pages__ and does not require installation: _piotr72us.github.io/employee-connect/_
+2. The app is also deployed to __GitHub Pages__ and does not require installation: piotr72us.github.io/employee-connect/
 
 
 ## Usage
