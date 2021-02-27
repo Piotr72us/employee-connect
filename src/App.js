@@ -15,6 +15,7 @@ class App extends React.Component {
     // call API (utils)
     API.getUsers().then(employees => {
       this.setState({ allUsers: employees.data.results })
+      console.log(employees);
     })
   }
 

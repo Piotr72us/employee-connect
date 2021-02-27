@@ -74,6 +74,9 @@ class EmployeeBar extends React.Component {
               </button>
             </div>
             <div className="col-sm">
+              <p><strong>Age</strong></p>
+            </div>
+            <div className="col-sm">
               <p><strong>Email</strong></p>
             </div>
             <div className="col-sm">

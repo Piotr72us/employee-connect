@@ -17,6 +17,9 @@ function EmployeeCard(props) {
                 <p><strong>{employee.name.first} {employee.name.last}</strong></p>
               </div>
               <div className="col-sm center">
+                <p><strong>{employee.dob.age}</strong></p>
+              </div>
+              <div className="col-sm center">
                 <p>{employee.email}</p>
               </div>
               <div className="col-sm center">
